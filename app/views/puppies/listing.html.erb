@@ -1,6 +1,7 @@
 <div class="puppy-listing-container">
   <h2>Your listing</h2>
   <div class="puppy-listing-info">
+    <%= cl_image_tag @puppy.photo, height: 300, width: 400, crop: :fill %>
     <p>Name: <%= @puppy.name %></p>
     <p>Breed: <%= @puppy.breed %></p>
     <p>Age: <%= @puppy.age %></p>
