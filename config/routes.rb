@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
     collection do
       get 'new', to: 'puppies#new', as: "new"
-      post '', to: 'puppies#create', as: "listing"
+      post '', to: 'puppies#create', as: ""
     end
 
     member do
