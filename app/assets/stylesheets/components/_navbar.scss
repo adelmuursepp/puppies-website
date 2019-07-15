@@ -1,15 +1,23 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #dbe9b7;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.round-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
+
+.navbar-toggler {
+  color: #C35979;
+
+}
+
+
 
 .dropdown-menu .dropdown-menu-right {
   background: #ff5a5f;
@@ -19,27 +27,21 @@
   border-width: 2px;
   font-weight: 800;
   padding-bottom: 10px;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: normal;
 }
 
-li {
-  color: #C35979;
+.navbar-nav .mr-auto {
+  background-color: #C35979;
 
 }
 
-
 .nav-item {
+  font-family: 'Montserrat', sans-serif;
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
   padding: 8px;
   border-bottom: 2px;
-  border-bottom-style: solid;
   border-bottom-color: rgba(0,0,0,0.5);
 }
-
-.nav-item .active {
-  background-color: #C35979
-}
-
