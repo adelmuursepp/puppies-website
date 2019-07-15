@@ -23,6 +23,12 @@
   letter-spacing: normal;
 }
 
+li {
+  color: #C35979;
+
+}
+
+
 .nav-item {
   display: inline-block;
   vertical-align: middle;
@@ -33,6 +39,7 @@
   border-bottom-color: rgba(0,0,0,0.5);
 }
 
-
-
+.nav-item .active {
+  background-color: #C35979
+}
 
