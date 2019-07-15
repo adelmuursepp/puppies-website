@@ -11,11 +11,14 @@
   </head>
   <body>
     <%= render 'shared/navbar' %>
-    <%= yield %>
+
+     <%= yield %>
 
     #messages important for devise
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+     <%= render 'shared/footer'%>
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
