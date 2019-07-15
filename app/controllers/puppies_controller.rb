@@ -4,6 +4,17 @@ class PuppiesController < ApplicationController
   end
 
   def create
-    redirect_to listing_puppy_path(1)
+    @puppy = Puppy.new(puppy_attributes)
+    @puppy.user = current_user
+    if @puppy.save
+      redirect_to listing_puppy_path(1)
+    else
+      render :new
+    end
   end
+
+  def puppy_attributes
+    params.require(:puppy).permit(:name, :breed, :age)
+  end
+
 end
