@@ -1,2 +1,10 @@
-<h3>puppy listing here</h3>
-<%= link_to "Go to browsing", root_path %>
+<div class="puppy-listing-container">
+  <h2>Your listing</h2>
+  <div class="puppy-listing-info">
+    <p>Name: <%= @puppy.name %></p>
+    <p>Breed: <%= @puppy.breed %></p>
+    <p>Age: <%= @puppy.age %></p>
+    <p>Owner: <%= @puppy.user.name %></p>
+  </div>
+</div>
+<%= link_to "Go browse puppies", root_path %>
