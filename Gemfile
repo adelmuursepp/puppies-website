@@ -18,6 +18,8 @@ gem 'webpacker'
 #ADDED GEMS
 
 gem 'devise'
+gem 'dotenv-rails', groups: [:development, :test] #used for gem security for use with cloudinary
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'
