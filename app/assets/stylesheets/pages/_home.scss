@@ -1,4 +1,50 @@
 // Specific CSS for your home-page
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-puppy {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  padding: 6px;
+  width: 30%;
+}
+
+.card-puppy img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.card-puppy h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-puppy p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-puppy .card-puppy-infos {
+  padding: 16px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
