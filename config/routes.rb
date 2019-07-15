@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
     member do
       get 'listing', to: 'puppies#listing'
+      get 'show', to: 'puppies#show'
     end
   end
 
