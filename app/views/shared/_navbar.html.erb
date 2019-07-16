@@ -29,7 +29,7 @@
           <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "List a puppy", new_puppies_path, class: "nav-link" %>
+          <%= link_to "List a puppy", new_puppies_path(list_new_puppy: true), class: "nav-link" %>
         </li>
       <% end %>
     </ul>

@@ -2,11 +2,7 @@ class PuppiesController < ApplicationController
   before_action :set_puppy, only: [ :show, :listing, :book ]
 
   def new
-    if user_signed_in?
-      @puppy = Puppy.new
-    else
-      redirect_to new_user_registration_path
-    end
+    @puppy = Puppy.new
   end
 
   def show
