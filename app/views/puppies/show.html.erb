@@ -4,13 +4,16 @@
     <%= cl_image_tag @puppy.photo, height: 300, width: 400, crop: :fill %>
     </div>
     <div class="puppy-specs">
-      <h2>Name: <%= @puppy.name %></h2>
-      <h2>Breed: <%= @puppy.breed %></h2>
-      <h2>Age: <%= @puppy.age %></h2>
+      <h2 id="about-puppy">About <%= @puppy.name %> </h2>
+      <p>Breed: <%= @puppy.breed %></p>
+      <p>Age: <%= @puppy.age %></p>
+      <p>Favorite Activities: </p>
     </div>
-    <% if @puppy.user = current_user %>
-    <%= link_to  "Delete Puppy", delete_puppy_path(@puppy), method: :delete, class: "btn btn-default" %>
-    <% end %>
+    <div class="delete-button">
+      <% if @puppy.user = current_user %>
+      <%= link_to  "Delete Puppy", delete_puppy_path(@puppy), method: :delete, class: "btn btn-default" %>
+      <% end %>
+    </div>
   </div>
     <div class="puppy-info">
       <h2 class="pl-2"><%= @puppy.name %></h2>
@@ -36,9 +39,7 @@
       <input class="date-selection" type="date" id="end" name="trip-end"
        value="2018-07-22"
        min="2020-01-01" max="2018-12-31">
-
       <hr>
-
       <div class="puppy-pricing">
         <h2>Pricing</h2>
       </div>
