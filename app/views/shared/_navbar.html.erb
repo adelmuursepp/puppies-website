@@ -21,15 +21,21 @@
           </div>
         </li>
       <% else %>
+      <% if controller_name != 'sessions' %>
         <li class="nav-item">
           <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
         </li>
+      <% end %>
+      <% if controller_name != 'registrations'%>
         <li class="nav-item">
           <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
         </li>
+      <% end %>
+      <% if controller_name != 'registrations' && controller_name != 'sessions' %>
         <li class="nav-item">
           <%= link_to "List a puppy", new_puppies_path(list_new_puppy: true), class: "nav-link" %>
         </li>
+      <% end %>
       <% end %>
     </ul>
   </div>
