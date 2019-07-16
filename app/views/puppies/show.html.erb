@@ -1,1 +1,9 @@
-<h2>Hello</h2>
+<div class="puppy-card">
+  <%= @puppy.photo %>
+  <div class="puppy-details">
+    <h2><%= @puppy.name %></h2>
+    <h2><%= @puppy.breed %></h2>
+    <h2><%= @puppy.age %></h2>
+    <%= link_to  "Book a puppy", book_puppy_path(@puppy) %>
+  </div>
+</div>

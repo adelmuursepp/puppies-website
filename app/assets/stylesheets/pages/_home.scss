@@ -1,49 +1,49 @@
 // Specific CSS for your home-page
 .flex-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+
 }
-.card-puppy {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  margin: 12px;
-  padding: 6px;
-  width: 30%;
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  .card-category {
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-decoration: none;
+    &:hover {
+
+    }
+  }
 }
 
-.card-puppy img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
-  margin-right: 8px;
+
+
+
+ h2 {
+  line-height: 30px;
+  margin-top: 40px;
+  color: rgb(72, 72, 72);
+  font-size: 24px;
 }
 
-.card-puppy h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
 
-.card-puppy p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
-
-.card-puppy .card-puppy-infos {
-  padding: 16px;
-}
-
-h2 {
-  font-size: 20px;
-}
 
 .banner {
   background-size: cover;

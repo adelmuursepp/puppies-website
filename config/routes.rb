@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     member do
       get 'listing', to: 'puppies#listing'
       get '/', to: 'puppies#show', as: ''
+      get 'book', to: 'puppies#book', as: 'book'
     end
   end
 
