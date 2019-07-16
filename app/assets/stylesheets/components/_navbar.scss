@@ -1,4 +1,13 @@
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
 .navbar-lewagon {
+  justify-content: space-between;
+  background: transparent;
+  transition: 2s background-color ease;
+}
+
+.navbar-lewagon-blue {
   justify-content: space-between;
   background: #167FFB;
 }

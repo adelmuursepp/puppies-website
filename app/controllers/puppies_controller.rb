@@ -1,6 +1,6 @@
 class PuppiesController < ApplicationController
   before_action :set_puppy, only: [ :show, :listing, :book ]
-  skip_before_action :authenticate_user!, only: [ :show, ]
+  skip_before_action :authenticate_user!, only: [ :show ]
 
   def new
     @puppy = Puppy.new
