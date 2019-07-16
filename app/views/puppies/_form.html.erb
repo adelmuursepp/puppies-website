@@ -1,9 +1,32 @@
-<%= simple_form_for(@puppy) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :breed %>
-  <%= f.input :age %>
-    <%= f.input :photo %>
+<!--
+<div>
+  <div class="form_sign_up">
+    <h2>Puppy Sign Up:</h2>
+    <%= simple_form_for(@puppy) #do |f| %>
+      <%= f.input #name%>
+      <%= f.input #:breed %>
+      <%= f.input #:age %>
+    <div class="form-actions">
+      <%= f.button #:submit %>
+    </div>
+    <#% end %>
+  </div>
+</div> -->
 
-  <%= f.input :photo_cache, as: :hidden %>
-  <%= f.button :submit %>
-<% end %>
+
+<div>
+  <div class="form-sign-up">
+    <h2>Puppu Sign up:</h2>
+    <%= simple_form_for(@puppy) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :breed %>
+      <%= f.input :age %>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+    <div class="form-actions">
+   <%= f.button :submit %>
+   </div>
+    <% end %>
+  </div>
+</div>
+
