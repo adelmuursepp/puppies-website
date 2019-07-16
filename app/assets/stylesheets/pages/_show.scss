@@ -22,7 +22,9 @@
   padding-left: 8px;
   padding-bottom: 8px;
 }
-
+#about-puppy{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 .puppy-info {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin: 12px;
@@ -102,4 +104,11 @@ hr {
 }
 .checked {
   color: orange;
+}
+ h2 {
+  text-align: -webkit-auto;
+  line-height: 30px;
+  margin-top: 15px;
+  color: rgb(72, 72, 72);
+  font-size: 24px;
 }
