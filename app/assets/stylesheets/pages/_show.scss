@@ -112,3 +112,14 @@ hr {
   color: rgb(72, 72, 72);
   font-size: 24px;
 }
+
+.modal-body{
+  display: flex;
+  justify-content: center;
+}
+.modal-body-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
