@@ -1,0 +1,30 @@
+.puppy-listing-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.puppy-listing-info {
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 95%;
+  height: 200px;
+  margin: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content:flex-start;
+}
+.puppy-listing-details{
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+}
+#listing-title{
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.btn-default{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.browse-button{
+  margin-left: 12px;
+}

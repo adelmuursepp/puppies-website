@@ -1,8 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg", class: "round-img" %>
+  <%= link_to "/", class: "navbar-brand" do %>
+    <%= image_tag "https://res.cloudinary.com/dx5k5yq5m/image/upload/v1563283492/LogoMakr_3skwcV_ikj3ht.png", height: 50%>
     <% end %>
-
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -22,15 +21,21 @@
           </div>
         </li>
       <% else %>
+      <% if controller_name != 'sessions' %>
         <li class="nav-item">
           <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
         </li>
+      <% end %>
+      <% if controller_name != 'registrations'%>
         <li class="nav-item">
           <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
         </li>
+      <% end %>
+      <% if controller_name != 'registrations' && controller_name != 'sessions' %>
         <li class="nav-item">
           <%= link_to "List a puppy", new_puppies_path(list_new_puppy: true), class: "nav-link" %>
         </li>
+      <% end %>
       <% end %>
     </ul>
   </div>
