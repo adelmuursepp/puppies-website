@@ -8,20 +8,17 @@
   </div>
 </div>
 
-<h2>Meet some of our verified good boys!</h2>
-<div class="flex-container">
-  <% @puppies.each do |puppy| %>
-    <div class="card-puppy">
-      <%= link_to cl_image_tag(puppy.photo,
-        width: 200, height: 150, crop: :fill), puppy_path(puppy) %>
-      <div class="card-product-infos">
-        <h2><%= puppy.name %></h2>
-        <p><%= puppy.breed %></p>
-      </div>
-    </div>
-  <% end %>
+<h2>Meet some of our verified good pups!</h2>
 
-</div>
+
+<div class="flex-container">
+   <% @puppies.each do |puppy| %>
+      <%= link_to puppy_path(puppy) do %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path(puppy.photo) if puppy.photo_url %>)">
+          <h3><%= puppy.name %></h3>
+        </div>
+      <% end %>
+   <% end %>
 </div>
 
 

@@ -8,6 +8,16 @@
       <h2>Breed: <%= @puppy.breed %></h2>
       <h2>Age: <%= @puppy.age %></h2>
     </div>
+<div class="puppy-card">
+  <%= @puppy.photo %>
+  <div class="puppy-details">
+    <h2><%= @puppy.name %></h2>
+    <h2><%= @puppy.breed %></h2>
+    <h2><%= @puppy.age %></h2>
+    <%= link_to  "Book a puppy", book_puppy_path(@puppy) %>
+    <% if @puppy.user = current_user %>
+    <%= link_to  "Delete Puppy", delete_puppy_path(@puppy), method: :delete %>
+    <% end %>
   </div>
     <div class="puppy-info">
       <h2 class="pl-2"><%= @puppy.name %></h2>
