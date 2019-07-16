@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       get 'listing', to: 'puppies#listing'
       get '/', to: 'puppies#show', as: ''
       get 'book', to: 'puppies#book', as: 'book'
+      delete '/', to: 'puppies#destroy', as: 'delete'
     end
   end
 

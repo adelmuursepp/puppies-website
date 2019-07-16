@@ -5,5 +5,8 @@
     <h2><%= @puppy.breed %></h2>
     <h2><%= @puppy.age %></h2>
     <%= link_to  "Book a puppy", book_puppy_path(@puppy) %>
+    <% if @puppy.user = current_user %>
+    <%= link_to  "Delete Puppy", delete_puppy_path(@puppy), method: :delete %>
+    <% end %>
   </div>
 </div>

@@ -33,6 +33,12 @@ class PuppiesController < ApplicationController
     @puppy = Puppy.find(params["id"])
   end
 
+  def destroy
+   @puppy = Puppy.find(params[:id])
+   @puppy.destroy
+   redirect_to root_path
+  end
+
   def puppy_attributes
     params.require(:puppy).permit(:name, :breed, :age, :photo )
   end
