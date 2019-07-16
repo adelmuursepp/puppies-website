@@ -1,5 +1,5 @@
 class PuppiesController < ApplicationController
-  before_action :set_puppy, only: [ :show, :listing ]
+  before_action :set_puppy, only: [ :show, :listing, :book ]
 
   def new
     @puppy = Puppy.new
@@ -22,6 +22,12 @@ class PuppiesController < ApplicationController
   end
 
   def book
+    @booking = Booking.new(puppy: @puppy, user: current_user)
+    if @booking.save
+      redirect_to root_path
+    else
+      render :show
+    end
   end
   def set_puppy
     @puppy = Puppy.find(params["id"])
