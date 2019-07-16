@@ -21,6 +21,8 @@ class PuppiesController < ApplicationController
   def listing
   end
 
+  def book
+  end
   def set_puppy
     @puppy = Puppy.find(params["id"])
   end
