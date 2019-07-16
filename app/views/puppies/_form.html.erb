@@ -1,6 +1,14 @@
-<%= simple_form_for(@puppy) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :breed %>
-  <%= f.input :age %>
-  <%= f.button :submit %>
-<% end %>
+<div>
+    <div class="form_sign_up">
+    <h2>Puppy Sign Up:</h2>
+    <%= simple_form_for(@puppy) do |f| %>
+      <%= f.input :name%>
+      <%= f.input :breed %>
+      <%= f.input :age %>
+      <div class="form-actions">
+      <%= f.button :submit %>
+      </div>
+    <% end %>
+  </div>
+</div>
+

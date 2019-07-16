@@ -1,13 +1,67 @@
+form {
+  padding: 20px;
+
+}
+
+.form_sign_up {
+  padding: 20px 300px;
+  border: none;
+}
+
 .form-inputs {
   display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  padding: 20px 500px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding: 0px 450px;
   font-weight: 100;
   margin: 0 auto;
+  width: 100%;
+  background: 0 0;
+  line-height: 1.2;
 
 }
 
 .form-actions {
   color: #616f39;
+  display: block;
+}
+
+.btn {
+  background-color: #5AB9EA;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 100px;
+  height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btn :hover {
+  opacity: 0.8;
+}
+
+h2 {
+  text-decoration: none;
+  text-align: center;
+  margin: 3;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.sign-in .form-heading {
+  margin: 0;
+  display: block;
+}
+
+.form-align {
+  padding-left: 450px;
+}
+
+.sign-up-submit {
+  padding: 0 25px;
 }
