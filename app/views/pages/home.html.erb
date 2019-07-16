@@ -9,30 +9,18 @@
 </div>
 
 <h2>Meet some of our verified good boys!</h2>
+<%= @puppies.each do |puppy| %>
 <div class="flex-container">
   <div class="card-puppy">
-  <%= link_to cl_image_tag("pug_image.jpg",
-      width: 200, height: 150, crop: :fill), '' %>
+  <%= cl_image_tag(puppy.photo,
+      width: 200, height: 150, crop: :fill) %>
   <div class="card-product-infos">
-    <h2>Product name</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
+    <h2><%= puppy.name %></h2>
+    <p><%= puppy.breed %></p>
   </div>
 </div>
-<div class="card-puppy">
-  <%= link_to cl_image_tag("pug_image.jpg",
-      width: 200, height: 150, crop: :fill), ''  %>
-  <div class="card-product-infos">
-    <h2>Product name</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-</div>
-<div class="card-puppy">
-  <%= link_to cl_image_tag("pug_image.jpg",
-      width: 200, height: 150, crop: :fill), '' %>
-  <div class="card-product-infos">
-    <h2>Product name</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
+<% end %>
+
 </div>
 </div>
 
