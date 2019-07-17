@@ -8,7 +8,8 @@ class PuppiesController < ApplicationController
     @markers = @puppies.map do |puppy|
       {
         lat: puppy.latitude,
-        lng: puppy.longitude
+        lng: puppy.longitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { puppy: puppy })
       }
     end
 
@@ -52,7 +53,7 @@ class PuppiesController < ApplicationController
   end
 
   def puppy_attributes
-    params.require(:puppy).permit(:name, :breed, :age, :photo )
+    params.require(:puppy).permit(:name, :breed, :age, :photo, :address )
   end
 
 end
