@@ -4,7 +4,7 @@
     <h1>Your listing</h1>
   </div>
   <div class="puppy-listing-info">
-    <%= cl_image_tag @puppy.photo, height: 200, width: 300, crop: :fill %>
+    <%= cl_image_tag @puppy.photo, height: 200, width: 300, crop: :fill, id: "listing-picture" %>
     <div class="puppy-listing-details">
     <h2><%= @puppy.name %></h2>
     <p>Breed: <%= @puppy.breed %></p>
