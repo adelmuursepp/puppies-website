@@ -5,7 +5,7 @@
       <div class="profile-edit">
       </div>
       <div class="profile-welcome">
-        <h1>Welcome back, Username</h1>
+      <h1>Welcome back, <% current_user.email %></h1>
         <h4>Madrid, Spain</h4>
         <%= link_to "Edit profile", "#", class: "btn btn-secondary" %>
       </div>
