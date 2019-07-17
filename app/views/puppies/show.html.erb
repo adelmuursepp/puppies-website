@@ -8,12 +8,23 @@
       <p>Breed: <%= @puppy.breed %></p>
       <p>Age: <%= @puppy.age %></p>
       <p>Favorite Activities: </p>
+      <hr id="hr-profile-page">
     </div>
+
+
+  <div class="option-buttons">
     <div class="delete-button">
       <% if @puppy.user = current_user %>
-      <%= link_to  "Delete Puppy", delete_puppy_path(@puppy), method: :delete, class: "btn btn-default" %>
+      <%= link_to  "Delete Puppy", delete_puppy_path(@puppy), method: :delete, class: "btn btn-primary" %>
       <% end %>
     </div>
+    <div class="add-another-button">
+      <% if @puppy.user = current_user %>
+      <%= link_to  "Add another puppy", new_puppies_path, class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+
   </div>
     <div class="puppy-info">
       <h2 class="pl-2"><%= @puppy.name %></h2>
@@ -23,22 +34,51 @@
       </div>
     </div>
     <div class="puppy-booking">
+      <div class="booking-details">
       <h2>$10 per day</h2>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/cveneziani", class: "avatar", alt: "avatar" %>
+      </div>
+      <div class="star-rating">
+        <div class="demo">
+          <div class="ratingControl">
+              <input type="radio" id="rating-5" name="rating" value="5">
+              <label class="ratingControl-stars ratingControl-stars--5" for="rating-5">5</label>
+              <input type="radio" id="rating-45" name="rating" value="4.5">
+              <label class="ratingControl-stars ratingControl-stars--45 ratingControl-stars--half" for="rating-45">45</label>
+              <input type="radio" id="rating-4" name="rating" value="4">
+              <label class="ratingControl-stars ratingControl-stars--4" for="rating-4">4</label>
+              <input type="radio" id="rating-35" name="rating" value="3.5">
+              <label class="ratingControl-stars ratingControl-stars--35 ratingControl-stars--half" for="rating-35">35</label>
+              <input type="radio" id="rating-3" name="rating" value="3">
+              <label class="ratingControl-stars ratingControl-stars--3" for="rating-3">3</label>
+              <input type="radio" id="rating-25" name="rating" value="2.5">
+              <label class="ratingControl-stars ratingControl-stars--25 ratingControl-stars--half" for="rating-25">25</label>
+              <input type="radio" id="rating-2" name="rating" value="2">
+              <label class="ratingControl-stars ratingControl-stars--2" for="rating-2">2</label>
+              <input type="radio" id="rating-15" name="rating" value="1.5">
+              <label class="ratingControl-stars ratingControl-stars--15 ratingControl-stars--half" for="rating-15">15</label>
+              <input type="radio" id="rating-1" name="rating" value="1">
+              <label class="ratingControl-stars ratingControl-stars--1" for="rating-1">1</label>
+              <input type="radio" id="rating-05" name="rating" value="0.5">
+              <label class="ratingControl-stars ratingControl-stars--05 ratingControl-stars--half" for="rating-05">05</label>
+          </div>
+        </div>
+      </div>
+
+
       <hr>
+      <div class="check-in-out">
       <p> Check-in </p>
       <input class="date-selection"type="date" id="start" name="trip-start"
        value="2018-07-22"
        min="2019-01-01" max="2018-12-31">
-
+      </div>
+      <div class="check-in-out">
       <p> Check-out </p>
       <input class="date-selection" type="date" id="end" name="trip-end"
        value="2018-07-22"
        min="2020-01-01" max="2018-12-31">
+       </div>
       <hr>
       <div class="puppy-pricing">
         <h2>Pricing</h2>
@@ -60,7 +100,6 @@
         <div class="booking-button">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Book me!</button>
-
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
