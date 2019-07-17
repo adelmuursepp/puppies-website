@@ -1,30 +1,36 @@
 <div class="profile-container">
-  <div class="profile-card">
-    <div class="image-container">
-      <img src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" style="width:100%" alt="">
-      <div class="title">
-        <h2>Welcome <%= @user.email %></h2>
+  <div class="container-profile-details">
+     <img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/arthur-littm">
+    <div class="container-profile-info">
+      <div class="profile-edit">
+        <button type="button" class="btn btn-labeled btn-info" href="#">
+          <span class="btn-label"></span>Edit</button>
+      </div>
+      <div class="profile-welcome">
+        <h1>Welcome back, Username</h1>
+        <h4>Madrid, Spain</h4>
       </div>
     </div>
-    <div class="main-container">
-      <h2>Bookings</h2>
+  </div>
+  <div class="container-puppy">
+    <div class="owned-puppies">
+      <div class="owned-puppies-info">
+        <h3>Your puppies</h3>
+        <div class="card-product puppy-card-owned ">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+          <div class="card-product-infos">
+            <h2>Puppy breed</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="booked-puppies">
+      <div class="booked-puppies-info">
+        <h3></h3>
+        <div class="puppy-card-booked puppy-card">
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-
-
-
-<!-- <div class="card">
-  <h1>Welcome, <%= @user.email %></h1>
-  <div>
-    <img class="avatar-profile" src="https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"></img>
-  </div>
-  <div>
-    <div class="bio">
-      <p>Hello, my name is <%= @user.email %>! I love dogs but I travel a lot and I can't always find a loving person to take care of her so Rent-a-Pup has been a lifesaver!</p>
-    </div>
-  </div>
-</div>
-
- -->

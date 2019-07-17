@@ -2,13 +2,14 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   resources :users, except: [:index, :show, :new, :create, :edit, :update, :destroy] do
-    member do
+    collection do
       get '/', to: 'users#profile', as: 'profile'
     end
   end
   resources :puppies, except: [:index, :show, :new, :create, :edit, :update, :destroy] do
 
     collection do
+      get '', to: "puppies#index"
       get 'new', to: 'puppies#new', as: "new"
       post '', to: 'puppies#create', as: ""
     end
