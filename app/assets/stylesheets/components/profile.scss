@@ -1,0 +1,82 @@
+.profile-container {
+  padding: 100px;
+  margin: 0 auto;
+}
+
+.container-profile-details {
+  width: 650px;
+  margin: auto;
+  background: #fff;
+  display: flex;
+}
+
+.container-profile-info {
+  position: relative;
+}
+
+.avatar-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-welcome {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.profile-edit {
+  background-position: center;
+  height: 110px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.container-puppy{
+  padding-left: 150px;
+  padding-right: 150px;
+  margin: 0 auto;
+
+}
+
+.owned-puppies {
+  width: 100%;
+
+}
+
+.owned-puppies-info{
+  margin: auto;
+  align-items: center;
+
+}
+
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 650px;
+  justify-content: flex-start;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+
+.card-product .card-product-infos {
+
+}
+
+
