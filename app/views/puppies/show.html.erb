@@ -15,12 +15,12 @@
   <div class="option-buttons">
     <div class="delete-button">
       <% if @puppy.user = current_user %>
-      <%= link_to  "Delete Puppy", delete_puppy_path(@puppy), method: :delete, class: "btn btn-primary" %>
+        <%= link_to  "Delete Puppy", delete_puppy_path(@puppy), method: :delete, class: "btn btn-primary" %>
       <% end %>
     </div>
     <div class="add-another-button">
       <% if @puppy.user = current_user %>
-      <%= link_to  "Add another puppy", new_puppies_path, class: "btn btn-primary" %>
+        <%= link_to  "Add another puppy", new_puppies_path, class: "btn btn-primary" %>
       <% end %>
     </div>
   </div>

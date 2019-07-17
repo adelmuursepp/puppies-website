@@ -15,7 +15,7 @@ $icon-star--light: 'data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%2
 .show-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 80px;
 }
 
 .puppy-card {
@@ -149,6 +149,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+
 .check-in-out p{
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -164,6 +165,7 @@ align-items: center;
   display: flex;
   justify-content: center;
   margin-bottom: .5rem;
+  height: 100px;
 }
 #hr-profile-page{
     margin-top: 0px;
@@ -189,7 +191,7 @@ align-items: center;
   border-radius: 50%;
   position: absolute;
   right: 0px;
-  top: 2px;
+  top: 77px;
   width: 50px;
 }
 
