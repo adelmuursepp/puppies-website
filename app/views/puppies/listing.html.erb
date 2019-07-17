@@ -1,15 +1,19 @@
 <h2 id="listing-title">Your listings</h2>
 <div class="puppy-listing-container">
+  <div>
+    <h1>Your listing</h1>
+  </div>
   <div class="puppy-listing-info">
     <%= cl_image_tag @puppy.photo, height: 200, width: 300, crop: :fill %>
     <div class="puppy-listing-details">
     <h2><%= @puppy.name %></h2>
     <p>Breed: <%= @puppy.breed %></p>
     <p>Age: <%= @puppy.age %></p>
-    <p>Owner: <%= @puppy.user.name %></p>
+    <p>Address: <%= @puppy.address%></p>
+    <div class="browse-button">
+<%= link_to "Back to browse", root_path, class:"btn btn-default" %>
+</div>
     </div>
   </div>
 </div>
-<div class="browse-button">
-<%= link_to "Go browse puppies", root_path, class:"btn btn-default" %>
-</div>
+
