@@ -49,13 +49,14 @@ a {
   text-align: center;
 }
 
-
+// banner css
 
 .banner {
+  position: relative;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-  height: 600px;
+  height: 80vh;
 }
 
 .banner h1 {
@@ -82,40 +83,33 @@ a {
 //css or the h1 h2 and h3 on the banner
 
 .rent-puppy h1 {
-font-size: 72px;
-color: white;
-position: relative;
-top: 50px;
+  font-size: 72px;
+  color: white;
+  margin: 50px 0;
 }
 
 .rent-puppy h2 {
   color: white;
   font-weight: bolder;
-  position: relative;
   font-size: 40px;
-
-
 }
 
 .rent-puppy h3 {
-color: rgb(240, 240, 240);
-position: relative;
-top: 120px;
-font-weight: lighter;
+  color: rgb(240, 240, 240);
+  font-weight: lighter;
 }
 
 // CSS for the search bar on the banner
 .search-form {
+  position: relative;
+  bottom: 200;
   display: flex;
   justify-content: center;
-}
-.banner-search {
-  position: relative;
-  top: 215px;
 }
 
 .search-form-control {
   position: relative;
+  bottom: 50px;
   width: 500px;
 }
 
@@ -149,5 +143,12 @@ font-weight: lighter;
 .btn-flat:hover {
   background: #1BCB7F;
   color: white;
+}
+
+// breakpount sm = 768px
+@include media-breakpoint-down(sm) {
+  .search-form-control {
+     width: 275px;
+   }
 }
 
