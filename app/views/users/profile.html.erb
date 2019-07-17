@@ -5,8 +5,8 @@
       <div class="profile-edit">
       </div>
       <div class="profile-welcome">
-      <h1>Welcome back, <% current_user.email %></h1>
-        <h4>Madrid, Spain</h4>
+      <h1>Welcome back, Simon</h1>
+        <h4>Bogota, Colombia</h4>
         <%= link_to "Edit profile", "#", class: "btn btn-secondary" %>
       </div>
     </div>
@@ -16,15 +16,16 @@
     <div class="owned-puppies">
       <div class="owned-puppies-info">
         <h3>Your puppies</h3>
-
         <% current_user.puppies.each do |puppy| %>
           <div class="card-product puppy-card-owned ">
             <%= cl_image_tag(puppy.photo) %>
+
+
+
             <div class="card-product-infos">
-              <h2 id="about-puppy">About <%= puppy.name %> </h2>
+              <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
               <p>Breed: <%= puppy.breed %></p>
               <p>Age: <%= puppy.age %></p>
-
             </div>
           </div>
         <% end %>
