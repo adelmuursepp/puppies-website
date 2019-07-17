@@ -1,7 +1,21 @@
+@font-face {
+  font-family: 'GT-Walsheim-Pro';
+  src: url('../../fonts/GT-Walsheim-Pro-Medium.ttf')
+}
+
+#brand-name {
+  font-family: 'GT-Walsheim-Pro';
+  font-weight: 400;
+  color: white;
+  font-size: 36px;
+  padding-left: 20px;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
 }
 .navbar-lewagon {
+  padding-top: 20px;
   justify-content: space-between;
   background: transparent;
   transition: 2s background-color ease;

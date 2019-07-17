@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
-  <%= link_to "/", class: "navbar-brand" do %>
-    <%= image_tag "https://res.cloudinary.com/dx5k5yq5m/image/upload/v1563283492/LogoMakr_3skwcV_ikj3ht.png", height: 50%>
-    <% end %>
+  <%= link_to "rent-a-puppy", root_path, class: "title-name", id: "brand-name"  %>
+<!--   <%= link_to "/", class: "navbar-brand" do %>
+    <% end %> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,7 +26,7 @@
           <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
         </li>
       <% end %>
-      <% if controller_name != 'registrations'%>
+      <% if controller_name != 'registrations' && controller_name != 'pages' %>
         <li class="nav-item">
           <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
         </li>
