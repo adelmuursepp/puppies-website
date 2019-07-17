@@ -2,6 +2,18 @@ class PuppiesController < ApplicationController
   before_action :set_puppy, only: [ :show, :listing, :book ]
   skip_before_action :authenticate_user!, only: [ :show ]
 
+  def index
+    @puppies = Puppy.where.not(latitude: nil, longitude: nil)
+
+    @markers = @puppies.map do |puppy|
+      {
+        lat: puppy.latitude,
+        lng: puppy.longitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { puppy: puppy })
+      }
+    end
+
+  end
   def new
     @puppy = Puppy.new
   end
@@ -41,7 +53,7 @@ class PuppiesController < ApplicationController
   end
 
   def puppy_attributes
-    params.require(:puppy).permit(:name, :breed, :age, :photo )
+    params.require(:puppy).permit(:name, :breed, :age, :photo, :address )
   end
 
 end
