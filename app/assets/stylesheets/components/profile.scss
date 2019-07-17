@@ -8,6 +8,8 @@
   margin: auto;
   background: #fff;
   display: flex;
+  height: 265px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .container-profile-info {
@@ -15,9 +17,12 @@
 }
 
 .avatar-large {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  position: relative;
+  top: 18px;
+  left: 9px;
 }
 
 .profile-welcome {
@@ -48,24 +53,32 @@
 
 .owned-puppies {
   width: 100%;
+  margin: 15px;
 
 }
 
 .owned-puppies-info{
   margin: auto;
   align-items: center;
+  margin-left: 61px;
 
 }
 
 .card-product {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  width: 650px;
-  justify-content: flex-start;
+    overflow: hidden;
+    height: 120px;
+    background: white;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    width: 650px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: 13px;
+    margin-left: -18px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .card-product img {
@@ -76,7 +89,39 @@
 
 
 .card-product .card-product-infos {
+  padding-left:10px;
 
 }
 
 
+.profile-welcome h1{
+    font-size: 2.5rem;
+    padding-left: 18px;
+    position: relative;
+    top: -97px;
+}
+
+.profile-welcome h4{
+    font-size: 1.5rem;
+    position: relative;
+    top: -105px;
+    left: 25px;
+  }
+
+.profile-welcome .btn{
+      background-color: #5AB9EA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 100px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    border-radius: 25px;
+    position: relative;
+    top: -105px;
+    left: 22px;
+}
