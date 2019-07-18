@@ -2,11 +2,11 @@
   <div class="form-sign-up">
     <h2>Puppy Registration:</h2>
     <%= simple_form_for(@puppy) do |f| %>
-      <%= f.input :name %>
-      <%= f.input :breed %>
-      <%= f.input :age %>
+      <%= f.input :name, required: false %>
+      <%= f.input :breed, required: false %>
+      <%= f.input :age, required: false %>
       <%= f.input :address %>
-      <%= f.input :photo %>
+      <%= f.input :photo, required: false %>
       <%= f.input :photo_cache, as: :hidden %>
 
     <div class="form-actions">
