@@ -22,6 +22,12 @@ form {
 
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
 .form-actions {
   color: #616f39;
   display: inline-block;
