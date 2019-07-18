@@ -10,10 +10,19 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+
+      <!--  Navbar stuff for logged in user -->
+
       <% if user_signed_in? %>
+
       <li class="nav-item">
         <%= link_to "List a puppy", new_puppies_path, class: "nav-link" %>
       </li>
+      <% if current_user.taking_puppies != nil %>
+      <li class="nav-item">
+        <%= link_to "Booked puppies", '#', class: "nav-link" %>
+      </li>
+      <% end %>
       <li class="nav-item dropdown">
         <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -21,32 +30,27 @@
           <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
         </div>
       </li>
+
+      <!--  Navbar stuff for not logged in user -->
+
       <% else %>
+
       <% if controller_name != 'sessions' %>
-      <li class="nav-item">
-        <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
-      </li>
+        <li class="nav-item">
+          <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+        </li>
       <% end %>
       <% if controller_name != 'registrations' && controller_name != 'pages' %>
-      <li class="nav-item">
-        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
-      </li>
-      <% end %>
-        <% if controller_name == 'pages' %>
-      <li class="nav-item">
-        <%= link_to "Booked puppies", '#', class: "nav-link" %>
-      </li>
+        <li class="nav-item">
+          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+        </li>
       <% end %>
       <% if controller_name != 'registrations' && controller_name != 'sessions' %>
       <li class="nav-item">
         <%= link_to "List a puppy", new_puppies_path(list_new_puppy: true), class: "nav-link" %>
       </li>
       <% end %>
-      <% if controller_name != 'registrations' && controller_name != 'sessions' %>
-      <li class="nav-item">
-        <%= link_to "List a puppy", new_puppies_path(list_new_puppy: true), class: "nav-link" %>
-      </li>
-      <% end %>
+
       <% end %>
     </ul>
   </div>
