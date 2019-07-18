@@ -67,17 +67,40 @@
 
 
       <hr>
+      <form action="#">
+    <div class="form-group">
+        <div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
+</div>
+</form>
       <div class="check-in-out">
       <p> Check-in </p>
       <input class="date-selection"type="date" id="start" name="trip-start"
-       value="2018-07-22"
-       min="2019-01-01" max="2018-12-31">
+       value="2019-07-19"
+       min="2019-07-10" max="2020-12-30">
       </div>
       <div class="check-in-out">
       <p> Check-out </p>
       <input class="date-selection" type="date" id="end" name="trip-end"
-       value="2018-07-22"
-       min="2020-01-01" max="2018-12-31">
+       value="2019-07-20"
+       min="2019-07-20" max="2020-12-31">
        </div>
       <hr>
       <div class="puppy-pricing">
@@ -96,6 +119,7 @@
           <p>$25</p>
         </div>
         <hr>
+
         <div class="booking-button">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Book me!</button>

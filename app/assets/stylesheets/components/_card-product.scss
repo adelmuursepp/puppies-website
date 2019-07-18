@@ -1,0 +1,26 @@
+.card-product {
+    overflow: hidden;
+    height: 120px;
+    background: white;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    width: 650px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: 13px;
+    margin-left: -18px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product a {
+  color: #484848
+}

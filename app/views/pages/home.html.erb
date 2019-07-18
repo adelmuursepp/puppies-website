@@ -9,19 +9,19 @@
     </div>
   </div>
 </div>
-
 <div class="search-form">
-      <div class= "banner-search">
-        <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-          <div class="search-form-control form-group">
-            <input class="form-control string required" type="text" name="search[query]" id="search_query" />
-            <button name="button" type="submit" class="btn btn-primary">
-              <i class="fas fa-search"></i> Search
-            </button>
-          </div>
-        </form>
+  <div class= "banner-search">
+    <form novalidate="novalidate" class="simple_form search" action="/puppies" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;"  />
+      <div class="search-form-control form-group">
+        <input class="form-control string required" placeholder="Find a breed" type="text" name="query" id="search_query" />
+        <button name="button" type="submit" class="btn btn-primary">
+          <i class="fas fa-search"></i> Search
+        </button>
       </div>
-    </div>
+    </form>
+  </div>
+</div>
+
 
 <h2 class= "dogs">Meet some of our verified good pups!</h2>
 
@@ -32,7 +32,7 @@
       <div class="flex-container">
          <% @puppies.each do |puppy| %>
             <%= link_to puppy_path(puppy) do %>
-              <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path(puppy.photo) if puppy.photo_url %>)">
+              <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path(puppy.photo, gravity: "auto") if puppy.photo_url %>)">
                 <h3><%= puppy.name %></h3>
               </div>
             <% end %>
