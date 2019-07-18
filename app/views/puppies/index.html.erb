@@ -1,3 +1,16 @@
+<br>
+<br>
+<br>
+
+
+<%= form_tag puppies_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a breed"
+  %>
+<% end %>
+
 <div class="container">
   <div class="row">
     <div class="col-12 col-lg-12 col-md-8 col-sm-4">
