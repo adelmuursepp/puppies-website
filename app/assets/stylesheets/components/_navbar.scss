@@ -20,9 +20,11 @@
   justify-content: space-between;
   background: transparent;
   transition: 2s background-color ease;
+  margin-bottom: 40px;
 }
 
 .navbar-lewagon-blue {
+  display: block;
   margin-bottom: 100px;
   justify-content: space-between;
   background: #167FFB;
