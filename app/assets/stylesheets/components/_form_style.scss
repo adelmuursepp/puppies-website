@@ -22,6 +22,10 @@ form {
 
 }
 
+.form-inputs #modal-input{
+  padding: 0px 100px;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -52,4 +56,7 @@ h2 {
 
 .sign-up-submit {
   padding: 0 25px;
+}
+.form-control{
+  width: 400px;
 }
