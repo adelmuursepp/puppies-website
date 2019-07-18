@@ -15,16 +15,22 @@
 .navbar-light .navbar-nav .nav-link {
   color: white;
   padding-bottom: 15px;
+  margin-bottom: 40px;
+
 }
 .navbar-lewagon {
   padding-top: 20px;
   height: 53px;
   justify-content: space-between;
   background: transparent;
+
   transition: 0.5s background-color ease;
+  margin-bottom: 40px;
+
 }
 
 .navbar-lewagon-blue {
+  margin-bottom: 100px;
   justify-content: space-between;
   background: #167FFB;
 }

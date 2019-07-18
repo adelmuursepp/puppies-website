@@ -19,9 +19,6 @@
         <% current_user.puppies.each do |puppy| %>
           <div class="card-product puppy-card-owned ">
             <%= cl_image_tag(puppy.photo) %>
-
-
-
             <div class="card-product-infos">
               <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
               <p>Breed: <%= puppy.breed %></p>
@@ -33,9 +30,19 @@
     </div>
     <div class="booked-puppies">
       <div class="booked-puppies-info">
-        <h3 class="past-puppies booked-pups">Booked puppies:</h3>
-        <div class="puppy-card-booked puppy-card">
-        </div>
+
+        <h3>Your booked puppies</h3>
+        <% current_user.taking_puppies.each do |puppy| %>
+          <div class="card-product puppy-card-booked ">
+            <%= cl_image_tag(puppy.photo) %>
+            <div class="card-product-infos">
+              <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
+              <p>Breed: <%= puppy.breed %></p>
+              <p>Age: <%= puppy.age %></p>
+            </div>
+          </div>
+        <% end %>
+
       </div>
     </div>
   </div>

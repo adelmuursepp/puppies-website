@@ -1,6 +1,6 @@
 class Puppy < ApplicationRecord
   belongs_to :user
-  has_many :bookings
+  has_many :bookings, dependent: :destroy
   has_many :takers, through: :bookings, source: :user
   has_many :givers, through: :bookings
   mount_uploader :photo, PhotoUploader
@@ -11,4 +11,11 @@ class Puppy < ApplicationRecord
   validates :breed, presence: true, allow_blank: false
   validates :user_id, presence: true, allow_blank: false
   validates :photo, presence: true, allow_blank: false
+
+  include PgSearch::Model
+  pg_search_scope :search_by_breed_and_name,
+    against: [ :breed, :name ],
+    using: {
+      tsearch: { prefix: true }
+    }
 end

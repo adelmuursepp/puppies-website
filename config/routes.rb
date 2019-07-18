@@ -10,15 +10,16 @@ Rails.application.routes.draw do
 
     collection do
       get '', to: "puppies#index"
-      get 'new', to: 'puppies#new', as: "new"
       post '', to: 'puppies#create', as: ""
+      get 'new', to: 'puppies#new', as: "new"
+      get 'booked', to: "puppies#booked", as: "booked"
     end
 
     member do
-      get 'listing', to: 'puppies#listing'
       get '/', to: 'puppies#show', as: ''
-      get 'book', to: 'puppies#book', as: 'book'
       delete '/', to: 'puppies#destroy', as: 'delete'
+      get 'listing', to: 'puppies#listing'
+      get 'book', to: 'puppies#book', as: 'book'
     end
   end
 

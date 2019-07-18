@@ -1,4 +1,5 @@
 // Specific CSS for your home-page
+// Cards CSS
 .flex-container {
   display: flex;
   justify-content: space-around;
@@ -35,11 +36,6 @@ a {
 }
 
 // css for the cards
-
-
-
-
-
 
  .dogs {
   line-height: 30px;
@@ -107,6 +103,11 @@ a {
   justify-content: center;
 }
 
+.banner-search {
+  position: relative;
+  bottom: 45px;
+}
+
 .search-form-control {
   position: relative;
   bottom: 50px;
@@ -144,6 +145,10 @@ a {
   background: #1BCB7F;
   color: white;
 }
+
+// Search Rails form design
+
+
 
 // breakpount sm = 768px
 @include media-breakpoint-down(sm) {
