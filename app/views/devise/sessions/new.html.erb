@@ -1,8 +1,6 @@
-
 <div class="sign-in form-heading">
   <h2>Log in</h2>
 </div>
-
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
     <%= f.input :email,
@@ -14,7 +12,6 @@
                 input_html: { autocomplete: "current-password" } %>
     <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
   </div>
-
 <div class="form-align">
   <div class="form-actions">
     <%= f.button :submit, "Log in" %>

@@ -23,12 +23,15 @@
       <% else %>
       <% if controller_name != 'sessions' %>
         <li class="nav-item">
-          <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signinModal" id="signinbutton">
+  Sign in
+</button>
         </li>
       <% end %>
-      <% if controller_name != 'registrations' && controller_name != 'pages' %>
+      <% if controller_name != 'registrations'%>
         <li class="nav-item">
-          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
         </li>
       <% end %>
       <% if controller_name != 'registrations' && controller_name != 'sessions' %>
