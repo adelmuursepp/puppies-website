@@ -96,21 +96,18 @@ a {
 }
 
 // CSS for the search bar on the banner
+
 .search-form {
-  position: relative;
-  bottom: 200;
+  width: 100vw;
+  position: absolute;
+  bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-.banner-search {
-  position: relative;
-  bottom: 45px;
-}
-
 .search-form-control {
   position: relative;
-  bottom: 50px;
+  bottom: 0px;
   width: 500px;
 }
 
