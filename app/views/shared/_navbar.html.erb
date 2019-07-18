@@ -20,7 +20,7 @@
       </li>
       <% if current_user.taking_puppies != nil %>
       <li class="nav-item">
-        <%= link_to "Booked puppies", '#', class: "nav-link" %>
+        <%= link_to "Booked puppies", booked_puppies_path, class: "nav-link" %>
       </li>
       <% end %>
       <li class="nav-item dropdown">

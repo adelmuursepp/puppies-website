@@ -42,6 +42,10 @@ class PuppiesController < ApplicationController
       render :show
     end
   end
+
+  def booked
+    @booked_puppies = current_user.taking_puppies
+  end
   def set_puppy
     @puppy = Puppy.find(params["id"])
   end
