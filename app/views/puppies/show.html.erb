@@ -67,24 +67,6 @@
 
 
       <hr>
-      <form action="#">
-    <div class="form-group">
-        <div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</form>
       <div class="check-in-out">
       <p> Check-in </p>
       <input class="date-selection"type="date" id="start" name="trip-start"
@@ -129,7 +111,7 @@
       </div>
       <div class="modal-body">
         <div class="modal-body-content">
-        <%= cl_image_tag @puppy.photo, height: 300, width: 400, crop: :fill %>
+        <%= cl_image_tag @puppy.photo, height: 300, width: 400, crop: :fill, gravity: :auto %>
         <p>You're almost ready to book <%= @puppy.name %></p>
         <p>Confirm and you're all set!</p>
         </div>
