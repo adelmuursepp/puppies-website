@@ -37,11 +37,6 @@ a {
 
 // css for the cards
 
-
-
-
-
-
  .dogs {
   line-height: 30px;
   margin-top: 70px;
@@ -108,6 +103,11 @@ a {
   justify-content: center;
 }
 
+.banner-search {
+  position: relative;
+  bottom: 45px;
+}
+
 .search-form-control {
   position: relative;
   bottom: 50px;
@@ -145,6 +145,10 @@ a {
   background: #1BCB7F;
   color: white;
 }
+
+// Search Rails form design
+
+
 
 // breakpount sm = 768px
 @include media-breakpoint-down(sm) {

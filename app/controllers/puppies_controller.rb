@@ -4,7 +4,6 @@ class PuppiesController < ApplicationController
 
   def index
     @puppies = Puppy.where.not(latitude: nil, longitude: nil)
-
     if params[:query].present?
       @puppies = @puppies.search_by_breed_and_name(params[:query])
     else
