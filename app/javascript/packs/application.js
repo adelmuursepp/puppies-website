@@ -3,5 +3,8 @@ import "jquery";
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 import { initMapbox } from '../plugins/init_mapbox.js';
+import { initDatePicker } from '../components/datepicker.js';
 initUpdateNavbarOnScroll();
 initMapbox();
+initDatePicker();
+console.log($);
