@@ -8,7 +8,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <%= simple_form_for(User.new, as: :user, url: registration_path(:user)) do |f| %>
+        <%= simple_form_for(User.new, as: :user, url: session_path(:user)) do |f| %>
   <%= f.error_notification %>
     <div class="form-inputs" id="modal-input" >
     <%= f.input :email,
