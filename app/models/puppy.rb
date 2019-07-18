@@ -11,4 +11,11 @@ class Puppy < ApplicationRecord
   validates :breed, presence: true, allow_blank: false
   validates :user_id, presence: true, allow_blank: false
   validates :photo, presence: true, allow_blank: false
+
+  include PgSearch::Model
+  pg_search_scope :search_by_breed_and_name,
+    against: [ :breed, :name ],
+    using: {
+      tsearch: { prefix: true }
+    }
 end
