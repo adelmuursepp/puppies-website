@@ -12,10 +12,10 @@
     </div>
   </div>
 
-  <div class="container-puppy">
-    <div class="owned-puppies">
+<div class="container-profile-details">
+  <div class="container-puppy" id="owned">
       <div class="owned-puppies-info">
-        <h3>Your puppies</h3>
+        <h3>Your listed puppies</h3>
         <% current_user.puppies.each do |puppy| %>
           <div class="card-product puppy-card-owned ">
             <%= cl_image_tag(puppy.photo) %>
@@ -28,9 +28,11 @@
         <% end %>
       </div>
     </div>
-    <div class="booked-puppies">
-      <div class="booked-puppies-info">
+</div>
 
+<div class="container-profile-details">
+    <div class="container-puppy" id="booked">
+      <div class="owned-puppies-info">
         <h3>Your booked puppies</h3>
         <% current_user.taking_puppies.each do |puppy| %>
           <div class="card-product puppy-card-booked ">
@@ -45,6 +47,7 @@
 
       </div>
     </div>
+  </div>
   </div>
 </div>
 

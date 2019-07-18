@@ -7,10 +7,12 @@
 .container-profile-details {
   width: 650px;
   margin: auto;
+  margin-top: 20px;
   background: #fff;
   display: flex;
-  height: 265px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: fit-content;
+  min-height: 150px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .container-profile-info {
@@ -49,6 +51,7 @@
   padding-left: 172px;
   padding-right: 150px;
   margin: 0 auto;
+  height: 100%;
 
 }
 
@@ -61,7 +64,15 @@
 .owned-puppies-info{
   margin: auto;
   align-items: center;
+  // justify-content: center;
   margin-left: 61px;
+  width: 100%;
+
+}
+.card-product{
+  width:600px;
+  margin-left: -220px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 
 }
 
@@ -106,4 +117,9 @@
   text-decoration: none;
   color: #484848
 }
-
+.booked-puppies-info{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-left: 61px;
+}
