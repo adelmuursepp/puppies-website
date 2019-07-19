@@ -20,7 +20,7 @@
 }
 .navbar-lewagon {
   padding-top: 20px;
-  height: 60px;
+  height: 75px;
   justify-content: space-between;
   background: transparent;
   transition: 0.5s background-color ease;
@@ -29,6 +29,7 @@
 }
 
 .navbar-lewagon-blue {
+padding-bottom: 10px;
   margin-bottom: 100px;
   justify-content: space-between;
   background: $primary;
