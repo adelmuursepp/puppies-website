@@ -1,6 +1,7 @@
 
 .profile-container {
   padding: 100px;
+  padding-bottom: 0px;
   margin: 0 auto;
 }
 
@@ -73,6 +74,7 @@
   width:600px;
   margin-left: -220px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  height: fit-content;
 
 }
 
