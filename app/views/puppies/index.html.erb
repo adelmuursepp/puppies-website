@@ -5,11 +5,10 @@
 <%= text_field_tag :query,
 params[:query],
 class: "form-control",
-  placeholder: "Find a breed"
+  placeholder: "Look for a breed"
   %>
   <% end %>
    <% @puppies.each do |puppy| %>
-  <h2>Search results for <%= puppy.breed %> </h2>
 
    <div class="card-product puppy-card-owned ">
     <%= cl_image_tag(puppy.photo) %>
