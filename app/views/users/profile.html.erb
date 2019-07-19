@@ -10,7 +10,7 @@
 
       <div class="profile-card">
           <h3>Your listed puppies</h3>
-    <% current_user.puppies.each do |puppy| %>
+          <% current_user.puppies.each do |puppy| %>
         <div class="puppy-card-profile">
         <%= cl_image_tag(puppy.photo) %>
             <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
@@ -81,6 +81,7 @@
           </div>
         </div>
       </div>
+          </div>
         <% end %>
         </div>
       </div>
