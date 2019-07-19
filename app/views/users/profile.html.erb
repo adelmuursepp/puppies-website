@@ -24,7 +24,7 @@
               <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
               <p>Breed: <%= puppy.breed %></p>
               <p>Age: <%= puppy.age %></p>
-        <%= link_to  "Delete Puppy", delete_puppy_path(puppy), method: :delete, class: "btn btn-default" %>
+        <%= link_to  "", delete_puppy_path(puppy), method: :delete, class: "fas fa-trash" %>
             </div>
           </div>
         <% end %>
