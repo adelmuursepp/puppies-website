@@ -10,6 +10,12 @@
 .title-name {
   color: white;
   font-size: 36px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    color: white;
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 
 .brand-name-small {
