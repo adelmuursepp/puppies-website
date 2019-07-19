@@ -1,15 +1,19 @@
-@font-face {
-  font-family: 'Open Sans', sans-serif;
-}
 
 .brand-name {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 .title-name {
   color: white;
   font-size: 36px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    color: white;
+    opacity: 1;
+    transform: scale(1.05);
+    margin-bottom: 30px;
+  }
 }
 
 .brand-name-small {

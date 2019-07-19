@@ -1,7 +1,3 @@
-.navbar-container {
-  margin-bottom: 5px;
-  position: relative;
-}
 
 @font-face {
   font-family: 'Open Sans', sans-serif;
@@ -81,4 +77,16 @@
   background-color: transparent;
   margin-top: 22px;
 }
+
+
+.nav-link {
+  transition: all .2s ease-in-out;
+  color: white;
+  &:hover {
+    color: white !important;
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
 

@@ -6,5 +6,25 @@
 $body-font: "Open Sans", "Helvetica", "sans-serif";
 $headers-font: "Raleway", "Helvetica", "sans-serif";
 
+@font-face {
+  font-family:'Avenir-Light';
+  src: url(font_path('AvenirLTStd-Light.otf')) format("opentype");
+}
+@font-face {
+  font-family:'Avenir-LightOblique';
+  src: url(font_path('AvenirLTStd-LightOblique.otf')) format("opentype");
+}
+@font-face {
+  font-family:'Avenir-BookOblique';
+  src: url(font_path('AvenirLTStd-BookOblique.otf')) format("opentype");
+}
+@font-face {
+  font-family:'Avenir-Medium';
+  src: url(font_path('AvenirLTStd-Medium.otf')) format("opentype");
+}
+@font-face {
+  font-family:'Avenir-Heavy';
+  src: url(font_path('AvenirLTStd-Heavy.otf')) format("opentype");
+}
 
 
