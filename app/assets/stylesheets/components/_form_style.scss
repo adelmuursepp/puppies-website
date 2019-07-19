@@ -33,7 +33,7 @@ form {
 }
 
 .form-actions {
-  color: $primary;
+  color: $success;
   display: inline-block;
 }
 
@@ -52,7 +52,7 @@ h2 {
 .form-control-file,
 .form-control-range,
 label {
-  color: white;
+  color: $success;
 }
 
 .sign-in .form-heading {
