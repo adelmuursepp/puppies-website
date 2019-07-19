@@ -51,6 +51,14 @@ class PuppiesController < ApplicationController
 
   def booked
     @booked_puppies = current_user.taking_puppies
+    @puppies = Puppy.where.not(latitude: nil, longitude: nil)
+    @markers = @puppies.map do |puppy|
+      {
+        lat: puppy.latitude,
+        lng: puppy.longitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { puppy: puppy })
+      }
+    end
   end
   def set_puppy
     @puppy = Puppy.find(params["id"])
@@ -60,10 +68,10 @@ class PuppiesController < ApplicationController
    @puppy = Puppy.find(params[:id])
    @puppy.destroy
    redirect_to root_path
-  end
+ end
 
-  def puppy_attributes
-    params.require(:puppy).permit(:name, :breed, :age, :photo, :address )
-  end
+ def puppy_attributes
+  params.require(:puppy).permit(:name, :breed, :age, :photo, :address )
+end
 
 end

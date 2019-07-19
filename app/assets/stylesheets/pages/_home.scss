@@ -42,9 +42,10 @@ a {
   line-height: 30px;
   margin-top: 70px;
   color: rgb(72, 72, 72);
-  font-size: 24px;
+  font-size: 35px;
   text-align: center;
   font-family: 'Avenir-Light';
+  margin-bottom: 20px;
 }
 
 // banner css
@@ -126,6 +127,7 @@ a {
 }
 
 .search-form-control .form-control {
+  border-radius: 4px;
   height: 3.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border: 1px solid #E7E7E7;
