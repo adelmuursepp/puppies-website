@@ -1,6 +1,97 @@
-<div class="profile-container">
+<div class=profile-container>
+  <div class="profile-details">
+    <img class="avatar-large" alt="avatar-large" src="<%= cl_image_path("https://res.cloudinary.com/dx5k5yq5m/image/upload/v1563527256/alex-headshot-square_eirnxf.jpg") %>">
+    <h1>Alex</h1>
+    <h2>Madrid, Spain</h2>
+    <p>Lorem ipsum other bullshit words</p>
+  </div>
+    <div class="profile-info">
+
+      <div class="profile-card">
+          <h3>Your listed puppies</h3>
+    <% current_user.puppies.each do |puppy| %>
+        <div class="puppy-card-profile">
+        <%= cl_image_tag(puppy.photo) %>
+            <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
+              <p>Breed: <%= puppy.breed %></p>
+              <p>Age: <%= puppy.age %></p>
+        <%= link_to  "", delete_puppy_path(puppy), method: :delete, class: "fas fa-trash" %>
+      <% end %>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <h3>Your booked puppies</h3>
+        <% current_user.taking_puppies.each do |puppy| %>
+          <div class="puppy-card-profile">
+            <%= cl_image_tag(puppy.photo) %>
+              <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
+              <p>Breed: <%= puppy.breed %></p>
+              <p>Age: <%= puppy.age %></p>
+        <% end %>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--   <h3>Your listed puppies</h3>
+    <% current_user.puppies.each do |puppy| %>
+        <%= cl_image_tag(puppy.photo) %>
+            <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
+              <p>Breed: <%= puppy.breed %></p>
+              <p>Age: <%= puppy.age %></p>
+        <%= link_to  "", delete_puppy_path(puppy), method: :delete, class: "fas fa-trash" %>
+      <% end %>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="profile-container">
   <div class="container-profile-details">
-     <img class="avatar-large" alt="avatar-large" src="<%= cl_image_path("user-circle") %>">
+     <img class="avatar-large" alt="avatar-large" src="<%= cl_image_path("https://res.cloudinary.com/dx5k5yq5m/image/upload/v1563527256/alex-headshot-square_eirnxf.jpg") %>">
     <div class="container-profile-info">
       <div class="profile-edit">
       </div>
@@ -55,3 +146,4 @@
 
 
 
+ -->
