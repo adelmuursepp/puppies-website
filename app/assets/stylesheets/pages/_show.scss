@@ -137,13 +137,24 @@ hr {
 .modal-body{
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 .modal-body-content{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  width: 100%;
 }
+
+.confirm-puppy {
+  margin-bottom: 20px;
+  box-shadow: 1px 3px 8px #d8d8d8;
+}
+
+.puppy-confirmation-text {
+ padding: 15px;
+}
+
 .check-in-out{
 display: flex;
 flex-direction: column;

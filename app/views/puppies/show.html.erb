@@ -96,9 +96,11 @@
       </div>
       <div class="modal-body">
         <div class="modal-body-content">
-        <%= cl_image_tag @puppy.photo, height: 300, width: 400, crop: :fill, gravity: :auto %>
-        <p>You're almost ready to book <%= @puppy.name %></p>
-        <p>Confirm and you're all set!</p>
+        <%= cl_image_tag @puppy.photo, class:"confirm-puppy", height: 300, crop: :fill, gravity: :auto %>
+        <div class="puppy-confirmation-text">
+          <p>You're almost ready to book <%= @puppy.name %></p>
+          <p>Confirm and you're all set!</p>
+        </div>
         </div>
       </div>
       <div class="modal-footer">
