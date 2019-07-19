@@ -8,6 +8,7 @@
       <h1>Welcome back, Simon</h1>
         <h4>Bogota, Colombia</h4>
         <%= link_to "Edit profile", "#", class: "btn btn-secondary" %>
+  </div>
       </div>
     </div>
   </div>
@@ -23,6 +24,7 @@
               <h2 id="about-puppy">About <%= link_to puppy.name, puppy_path(puppy) %></h2>
               <p>Breed: <%= puppy.breed %></p>
               <p>Age: <%= puppy.age %></p>
+        <%= link_to  "Delete Puppy", delete_puppy_path(puppy), method: :delete, class: "btn btn-default" %>
             </div>
           </div>
         <% end %>
@@ -44,10 +46,12 @@
             </div>
           </div>
         <% end %>
-
       </div>
     </div>
   </div>
-  </div>
 </div>
+
+
+
+
 
