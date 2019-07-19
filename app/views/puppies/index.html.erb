@@ -14,7 +14,7 @@ class: "form-control",
     <%= cl_image_tag(puppy.photo) %>
     <div class="card-product-infos">
       <h2 id="about-puppy"><%= link_to puppy.name, puppy_path(puppy) %></h2>
-      <p>Breed: <%= puppy.breed %></p>
+      <p><%= puppy.breed %></p>
       <p>Age: <%= puppy.age %></p>
     </div>
   </div>
