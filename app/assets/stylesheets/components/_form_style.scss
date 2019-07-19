@@ -51,7 +51,8 @@ h2 {
 .form-control-file,
 .form-control-range,
 label {
-  color: $success;
+  color: white;
+  opacity: 0.7;
 }
 
 .sign-in .form-heading {
@@ -70,5 +71,5 @@ label {
   width: 400px;
 }
 .form-control-label{
-  color: white;
+  color: $gray;
 }
