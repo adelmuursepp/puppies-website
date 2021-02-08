@@ -20,7 +20,7 @@ gem 'webpacker'
 gem 'devise'
 gem 'dotenv-rails', groups: [:development, :test] #used for gem security for use with
 gem 'cloudinary', '~> 1.9.1' #gem for using cloudinary
-gem 'carrierwave', '~> 1.2' #gem for uploading photos
+gem 'carrierwave', '~> 1.3' #gem for uploading photos
 gem 'geocoder'
 gem 'pg_search'
 gem 'momentjs-rails', '>= 2.9.0'
