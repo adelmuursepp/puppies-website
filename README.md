@@ -1,1 +1,11 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+### Web app created on Ruby on Rails with MVC structure.
+http://rent-a-puppy.herokuapp.com/
+
+Created in a team of 4 developers in Le Wagon Code Bootcamp. 
+
+### Functionality
+
+- authentication
+- list a posting about a puppy
+- remove a listing from the database
+- make a reservation for a listing and "book" a puppy
